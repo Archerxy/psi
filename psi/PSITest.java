@@ -63,7 +63,7 @@ public class PSITest {
 			System.out.println("total cost = " + (t3 - t0) + "ms");
 			System.out.println("psi size = "+psiSet.size());
 			
-			Path dst =  Paths.get("E:\\隐私计算\\data-set/psi.txt");
+			Path dst =  Paths.get("E:/psi.txt");
 			for(byte[] p: psiSet) {
 				Files.write(dst, p, StandardOpenOption.APPEND);
 				Files.write(dst, "\n".getBytes(), StandardOpenOption.APPEND);
